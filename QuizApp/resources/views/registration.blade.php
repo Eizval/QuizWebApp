@@ -21,9 +21,17 @@
             <input type="password" id="confirm" name="confirm"> <br> <br>
             <input type="submit" value="Submit">
             <p></p>
+            <br>
         </form>
 
     </div>    
+
+    <nav>
+    <a href="{{route('index')}}">Home</a>
+    <a href="{{route('login')}}">Login</a>
+    <a href="{{route('signin')}}">SignIn</a>
+    </nav>
+
 </body>
 </html>
 

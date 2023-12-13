@@ -10,7 +10,7 @@
 </div>
 
 <nav>
-    <a href="index.blade.php">Home</a>
-    <a href="login.blade.php">Login</a>
-    <a href="registration.blade.php">SignIn</a>
+    <a href="{{route('index')}}">Home</a>
+    <a href="{{route('login')}}">Login</a>
+    <a href="{{route('signin')}}">SignIn</a>
 </nav>
