@@ -10,7 +10,8 @@
     <div class="content">
 
         <h1>Sign In</h1>
-        <form action="">
+        <form action="{{url('upload')}}" methode="POST" ectype="multipart/form-data">
+            @csrf
             <p class="forms">E-Mail</p>
             <input type="email" id="email" name="email">
             <p class="forms">Username</p>
@@ -25,6 +26,8 @@
         </form>
 
     </div>    
+
+    
 
     <nav>
     <a href="{{route('index')}}">Home</a>

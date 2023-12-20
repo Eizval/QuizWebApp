@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\TaskController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\aalavai;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,7 +31,6 @@ Route::get('/signin', function () {
     return view('registration');
 })->name('signin');
 
-
-use App\Models\Task;
+Route::post('/upload', [TaskController::class, 'upload']);
  
-Route::get('/tasks', [TaskController::class, 'index']); 
+// Route::get('/tasks', [TaskController::class, 'index']); 
