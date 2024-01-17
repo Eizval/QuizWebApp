@@ -22,10 +22,10 @@ Route::get('/', function () {
 Route::get('/welcome', function () {
     return view('welcome');
 });
-
-Route::get('/login', function () {
-    return view('login');
-})->name('login');
+    
+Route::get('/login1', function () {
+    return view('login1');
+})->name('login1');
 
 Route::get('/signin', function () {
     return view('registration');
@@ -34,3 +34,6 @@ Route::get('/signin', function () {
 Route::post('/upload', [TaskController::class, 'upload']);
  
 // Route::get('/tasks', [TaskController::class, 'index']); 
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

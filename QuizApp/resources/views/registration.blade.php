@@ -10,7 +10,7 @@
     <div class="content">
 
         <h1>Sign In</h1>
-        <form action="{{url('upload')}}" methode="POST" ectype="multipart/form-data">
+        <form action="{{ url('upload') }}" method="POST" enctype="multipart/form-data">
             @csrf
             <p class="forms">E-Mail</p>
             <input type="email" id="email" name="email">
@@ -25,13 +25,14 @@
             <br>
         </form>
 
+
     </div>    
 
     
 
     <nav>
     <a href="{{route('index')}}">Home</a>
-    <a href="{{route('login')}}">Login</a>
+    <a href="{{route('login1')}}">Login</a>
     <a href="{{route('signin')}}">SignIn</a>
     </nav>
 
